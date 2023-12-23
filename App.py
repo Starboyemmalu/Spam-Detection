@@ -20,10 +20,10 @@ def main():
     # ===================== Set page config and background =======================
     # Main panel setup
     # Set website details
-    st.set_page_config(page_title ="Temiloluwa's Spam Checker Demo", 
+    st.set_page_config(page_title ="Emmanuel's Spam Checker Demo", 
                        page_icon=':desktop_computer:', 
                        layout='centered')
-    """## Temiloluwa's Spam Checker Demo"""
+    """## Emmanuel's Spam Checker Demo"""
 
     with st.expander("About"):
         st.write("This App is a basic demo of Artificial Intelligence for Automatic Spam detection in messages. In building this, we leverage deep learning (NLP) techniques, specifically the ULMfit Method introduced by the Facebook AI research Lab in the paper [here](https://arxiv.org/abs/1801.06146)")
@@ -34,13 +34,13 @@ def main():
         demo = st.selectbox('Use Demo Texts',('None', 'Demo 1','Demo 2', 'Demo 3', 'Demo 4'))
 
     if demo == "Demo 1":
-      demo_text = 'A redacted loan for 950,000 Naira is approved for you if you receive this SMS. 1 min verification & cash in 1 hr at www.temimoney.com.ng to opt out reply stop'
+      demo_text = 'A redacted loan for 950,000 Naira is approved for you if you receive this SMS. 1 min verification & cash in 1 hr at www.emmamoney.com.ng to opt out reply stop'
     elif demo == "Demo 2":  
       demo_text = "There is an assignment that must be submitted tommorow in class, the lecturer will give 0 scores to those that do not do the assignment or attend the class"
     elif demo == "Demo 3":  
       demo_text = "Due to a new legislation by the Nigerian government, those struggling with debt can now apply to have it written off. For more information text the word INFO or to opt out text STOP"
     elif demo == "Demo 4":  
-      demo_text = "Good day secretary, kindly schedule an interview for Temi today. She has to be employed effective immediately if she meets all our requirements"
+      demo_text = "Good day secretary, kindly schedule an interview for Emma today. he has to be employed effective immediately if she meets all our requirements"
     else:
       demo_text = ""
 
